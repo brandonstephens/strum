@@ -32,4 +32,4 @@ Helping hand for learning to strum on the guitar. Based on <https://www.youtube.
 - [ ] allow toggle of strum pattern
 - [ ] pick out better colorblind friendly colors/contrasts
 - [ ] dark/light modes
-- [ ] random strum patterns
+- [ ] shuffle button for strum patterns
