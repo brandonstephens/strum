@@ -1,8 +1,10 @@
 # Strum
 
-Helping hand for learning to strum on the guitar.
+Helping hand for learning to strum on the guitar. Based on <https://www.youtube.com/watch?v=CjM5fyXoV8w>
 
-Based on https://www.youtube.com/watch?v=CjM5fyXoV8w
+<https://strum.bsteph.com>
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/cecf8501-8458-495e-a9d6-75211e041e71/deploy-status)](https://app.netlify.com/sites/fervent-leakey-947339/deploys)
 
 ## Installation
 
@@ -14,6 +16,7 @@ Based on https://www.youtube.com/watch?v=CjM5fyXoV8w
 ## Build
 
 1. `npm run build`
+2. outpu goes to `./dist`
 
 ## References
 
@@ -24,7 +27,7 @@ Based on https://www.youtube.com/watch?v=CjM5fyXoV8w
 
 - [x] tailwind setup
 - [x] prettier setup
-- [ ] deploy to the world
+- [x] deploy to the world
 - [ ] some sort of templating
 - [ ] allow toggle of strum pattern
 - [ ] pick out better colorblind friendly colors/contrasts
