@@ -16,7 +16,7 @@ Helping hand for learning to strum on the guitar. Based on <https://www.youtube.
 ## Build
 
 1. `npm run build`
-2. outpu goes to `./dist`
+2. output goes to `./dist`
 
 ## References
 
@@ -32,4 +32,13 @@ Helping hand for learning to strum on the guitar. Based on <https://www.youtube.
 - [ ] allow toggle of strum pattern
 - [ ] pick out better colorblind friendly colors/contrasts
 - [ ] dark/light modes
+<<<<<<< HEAD
 - [ ] shuffle button for strum patterns
+=======
+- [ ] random strum patterns
+- [ ] try audio apis to make noises
+- [ ] make repo public
+- [ ] add apple touch icon
+- [ ] add favicon
+- [ ] add some sort of buy me a beer button
+>>>>>>> 45d0889d30ac59014f892e16c5ec8721f6925736
