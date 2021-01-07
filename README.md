@@ -19,3 +19,14 @@ Based on https://www.youtube.com/watch?v=CjM5fyXoV8w
 
 - <https://www.11ty.dev>
 - <https://tailwindcss.com>
+
+## Todo
+
+- [x] tailwind setup
+- [x] prettier setup
+- [ ] deploy to the world
+- [ ] some sort of templating
+- [ ] allow toggle of strum pattern
+- [ ] pick out better colorblind friendly colors/contrasts
+- [ ] dark/light modes
+- [ ] random strum patterns
