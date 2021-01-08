@@ -1,6 +1,6 @@
 module.exports = (eleventyConfig) => {
   eleventyConfig.setBrowserSyncConfig({
-    open: 'local',
+    open: 'local', // launches localhost on npm start
   })
 
   return {
