@@ -1,22 +1,27 @@
 {
   "name": "strum",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A helping hand for learning to strum on the guitar",
   "scripts": {
+    "clean": "rm -rf ./dist",
     "start": "eleventy --serve & postcss ./src/styles.css --o ./dist/style.css --watch",
-    "build": "ELEVENTY_PRODUCTION=true eleventy && NODE_ENV=production postcss ./src/styles.css --o ./dist/style.css"
+    "build": "ELEVENTY_PRODUCTION=true eleventy && NODE_ENV=production postcss ./src/styles.css --o ./dist/style.css",
+    "serve": "serve --no-clipboard --listen 8080 dist"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "guitar",
+    "eleventy",
+    "tailwind"
+  ],
+  "author": "Brandon Stephens",
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^0.11.0",
     "autoprefixer": "^10.1.0",
-    "css-loader": "^5.0.1",
     "postcss": "^8.2.1",
     "postcss-cli": "^8.3.0",
     "prettier": "2.2.1",
+    "serve": "^11.3.2",
     "tailwindcss": "^2.0.2"
   }
 }

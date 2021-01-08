@@ -1,6 +1,6 @@
 # Strum
 
-Helping hand for learning to strum on the guitar. Based on <https://www.youtube.com/watch?v=CjM5fyXoV8w>
+A helping hand for learning to strum on the guitar. Based on <https://www.youtube.com/watch?v=CjM5fyXoV8w>
 
 <https://strum.bsteph.com>
 
@@ -28,17 +28,17 @@ Helping hand for learning to strum on the guitar. Based on <https://www.youtube.
 - [x] tailwind setup
 - [x] prettier setup
 - [x] deploy to the world
-- [ ] some sort of templating
+- [x] some sort of templating
 - [ ] allow toggle of strum pattern
-- [ ] pick out better colorblind friendly colors/contrasts
-- [ ] dark/light modes
+- [ ] add query params for loading specific patterns
 - [ ] shuffle button for strum patterns
-- [ ] random strum patterns
-- [ ] try audio apis to make noises
-- [ ] make repo public
+- [ ] random strum patterns on load
+- [ ] pick out better colorblind friendly colors/contrasts
+- [ ] track loaded patterns (for popularity)
+- [ ] dark/light modes
 - [ ] add apple touch icon
 - [ ] add favicon
-- [ ] add some sort of buy me a beer button
+- [ ] make repo public
+- [ ] try audio apis to make noises
 - [ ] add playback speed
-- [ ] add query params for loading specific patterns
-- [ ] track loaded patterns (for popularity)
+- [ ] add some sort of buy me a beer button

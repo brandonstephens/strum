@@ -4,5 +4,5 @@ module.exports = {
   singleQuote: true,
   printWidth: 120,
   trailingComma: 'es5',
-  files: ['*.html', '*.css', '*.js'],
+  files: ['*.html', '*.css', '*.js', '*.liquid'],
 }
