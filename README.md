@@ -40,3 +40,5 @@ Helping hand for learning to strum on the guitar. Based on <https://www.youtube.
 - [ ] add favicon
 - [ ] add some sort of buy me a beer button
 - [ ] add playback speed
+- [ ] add query params for loading specific patterns
+- [ ] track loaded patterns (for popularity)
