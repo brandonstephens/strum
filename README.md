@@ -44,7 +44,7 @@ Delete the `./dist` folder.
 ## Hosting Details
 
 - CI & Hosting on Netlify.
-- GoSquared Analytics added as post build step in Netlify.
+- GoSquared analytics added as post processing step in Netlify.
 
 ## Todo
 
@@ -54,9 +54,9 @@ Delete the `./dist` folder.
 - [x] some sort of templating
 - [x] allow toggle of strum pattern
 - [x] add query params for loading specific patterns
-- [ ] shuffle button for strum patterns
+- [ ] add screen reader friendly labels to buttons
+- [ ] shuffle button for random strum patterns
 - [ ] pick out better colorblind friendly colors/contrasts
-- [ ] track loaded patterns (for popularity)
 - [ ] dark/light modes
 - [ ] add apple touch icon
 - [ ] add favicon
