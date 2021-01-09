@@ -46,7 +46,7 @@ Delete the `./dist` folder.
 - CI & Hosting on Netlify.
 - GoSquared Analytics added as post build step in Netlify.
 
-## Todo
+## Roadmap
 
 - [x] tailwind setup
 - [x] prettier setup
