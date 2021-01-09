@@ -23,13 +23,16 @@ const toggleBeat = (target) => {
 }
 
 const getQueryParams = () => {
-  return window.location.search
-    .substring(1)
-    .split('&')
-    .filter((x) => x.startsWith('s='))[0]
-    .split('=')[1]
-    .split('')
-    .map((x) => Number(x))
+  return (
+    window.location.search &&
+    window.location.search
+      .substring(1)
+      .split('&')
+      .filter((x) => x.startsWith('s='))[0]
+      .split('=')[1]
+      .split('')
+      .map((x) => Number(x))
+  )
 }
 
 const updateState = () => {
