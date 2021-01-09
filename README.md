@@ -13,19 +13,26 @@ Based on strumming exercise seen in this [video by JustinGuitar](https://www.you
 3. `npm start`
 4. <http://localhost:8081>
 
-## NPM Commands
+## Commands
 
 ### Build
+
+Build production version of the site.
 
 1. `npm run build`
 2. output goes to `./dist`
 
-### Serve (built site)
+### Serve
 
-1. npm run serve
-2. <http://localhost:8080>
+Serve the `./dist` directory.
+
+1. npm run build
+2. npm run serve
+3. <http://localhost:8080>
 
 ### Clean build folder
+
+Delete the `./dist` folder.
 
 1. npm run clean
 
@@ -33,6 +40,11 @@ Based on strumming exercise seen in this [video by JustinGuitar](https://www.you
 
 - <https://www.11ty.dev>
 - <https://tailwindcss.com>
+
+## Hosting Details
+
+- CI & Hosting on Netlify.
+- GoSquared Analytics added as post build step in Netlify.
 
 ## Todo
 
