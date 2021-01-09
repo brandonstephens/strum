@@ -1,6 +1,8 @@
 # Strum
 
-A helping hand for learning to strum on the guitar. Based on <https://www.youtube.com/watch?v=CjM5fyXoV8w>
+A helping hand for learning to strum on the guitar.
+
+Based on [video by JustinGuitar](https://www.youtube.com/watch?v=CjM5fyXoV8w)
 
 <https://strum.bsteph.com>
 
