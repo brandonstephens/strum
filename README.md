@@ -1,12 +1,10 @@
 # Strum
 
-A helping hand for learning to strum on the guitar.
-
-Based on [video by JustinGuitar](https://www.youtube.com/watch?v=CjM5fyXoV8w)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/cecf8501-8458-495e-a9d6-75211e041e71/deploy-status)](https://app.netlify.com/sites/fervent-leakey-947339/deploys)
 
 <https://strum.bsteph.com>
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/cecf8501-8458-495e-a9d6-75211e041e71/deploy-status)](https://app.netlify.com/sites/fervent-leakey-947339/deploys)
+Based on strumming exercise seen in this [video by JustinGuitar](https://www.youtube.com/watch?v=CjM5fyXoV8w)
 
 ## Installation
 
