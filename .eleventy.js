@@ -6,19 +6,14 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addShortcode('strum', function (beat, active) {
     const isDown = beat % 2 !== 0
     const icon = !active ? '✕' : isDown ? '↓' : '↑'
+    const className = !active ? 'inactive' : isDown ? 'down' : 'up'
 
-    const className = !active
-      ? 'bg-coolGray-400 border-coolGray-500 ring-coolGray-600 text-coolGray-800 opacity-25'
-      : isDown
-      ? 'bg-blue-400 border-blue-500 ring-blue-600  text-blue-800'
-      : 'bg-purple-400 border-purple-500 ring-purple-600  text-purple-800'
-
-    return `<div
+    return `<button
               id="beat_${beat}"
-              class="transform scale-75 rounded-full w-16 h-16 border-8 md:ring-8 flex justify-center items-center ${className}"
+              class="strum-base ${className}"
             >
               ${icon}
-            </div>`
+            </button>`
   })
 
   return {
