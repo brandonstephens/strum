@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Strum Practice | Guitar Helper</title>
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/scripts/app.js" type="module"></script>
   </head>
   <body class="bg-coolGray-800">
     <div class="max-w-2xl mx-auto py-20 space-y-20 p-4">
@@ -12,27 +13,27 @@
         Strum Practice
       </h1>
 
-      <div class="grid grid-cols-4 gap-4">
+      <div id="strumPattern" class="grid grid-cols-4 gap-4">
         <div class="space-y-4">
           <h2 class="white border-b-2 border-coolGray-700 mb-4 text-2xl text-blue-200 font-extrabold">1</h2>
-          <div class="flex">{% strum 1 true %} {% strum 2 false %}</div>
+          <div class="flex">{% strum 1 %} {% strum 2 %}</div>
         </div>
         <div>
           <div class="space-y-4">
             <h2 class="white border-b-2 border-coolGray-700 mb-4 text-2xl text-blue-200 font-extrabold">2</h2>
-            <div class="flex">{% strum 3 true %} {% strum 4 false %}</div>
+            <div class="flex">{% strum 3 %} {% strum 4 %}</div>
           </div>
         </div>
         <div>
           <div class="space-y-4">
             <h2 class="white border-b-2 border-coolGray-700 mb-4 text-2xl text-blue-200 font-extrabold">3</h2>
-            <div class="flex">{% strum 5 true %} {% strum 6 true %}</div>
+            <div class="flex">{% strum 5 %} {% strum 6 %}</div>
           </div>
         </div>
         <div>
           <div class="space-y-4">
             <h2 class="white border-b-2 border-coolGray-700 mb-4 text-2xl text-blue-200 font-extrabold">4</h2>
-            <div class="flex">{% strum 7 true %} {% strum 8 true %}</div>
+            <div class="flex">{% strum 7 %} {% strum 8 %}</div>
           </div>
         </div>
       </div>
@@ -45,27 +46,5 @@
         >
       </p>
     </div>
-
-    <script>
-      const pattern = {
-        1: {
-          down: true,
-          up: false,
-        },
-
-        2: {
-          down: true,
-          up: false,
-        },
-        3: {
-          down: true,
-          up: true,
-        },
-        4: {
-          down: true,
-          up: true,
-        },
-      }
-    </script>
   </body>
 </html>

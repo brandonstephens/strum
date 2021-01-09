@@ -4,8 +4,8 @@
   "description": "A helping hand for learning to strum on the guitar",
   "scripts": {
     "clean": "rm -rf ./dist",
-    "start": "eleventy --serve & postcss ./src/styles.css --o ./dist/style.css --watch",
-    "build": "ELEVENTY_PRODUCTION=true eleventy && NODE_ENV=production postcss ./src/styles.css --o ./dist/style.css",
+    "start": "eleventy --serve & postcss ./src/styles/styles.css --o ./dist/style.css --watch",
+    "build": "ELEVENTY_PRODUCTION=true eleventy && NODE_ENV=production postcss ./src/styles/styles.css --o ./dist/style.css",
     "serve": "serve --no-clipboard --listen 8080 dist"
   },
   "keywords": [

@@ -29,10 +29,9 @@ A helping hand for learning to strum on the guitar. Based on <https://www.youtub
 - [x] prettier setup
 - [x] deploy to the world
 - [x] some sort of templating
-- [ ] allow toggle of strum pattern
-- [ ] add query params for loading specific patterns
+- [x] allow toggle of strum pattern
+- [x] add query params for loading specific patterns
 - [ ] shuffle button for strum patterns
-- [ ] random strum patterns on load
 - [ ] pick out better colorblind friendly colors/contrasts
 - [ ] track loaded patterns (for popularity)
 - [ ] dark/light modes
