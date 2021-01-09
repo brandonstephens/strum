@@ -13,17 +13,19 @@ Based on strumming exercise seen in this [video by JustinGuitar](https://www.you
 3. `npm start`
 4. <http://localhost:8081>
 
-## Build
+## NPM Commands
+
+### Build
 
 1. `npm run build`
 2. output goes to `./dist`
 
-## Serve (built site)
+### Serve (built site)
 
 1. npm run serve
 2. <http://localhost:8080>
 
-## Clean build folder
+### Clean build folder
 
 1. npm run clean
 
