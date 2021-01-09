@@ -18,6 +18,15 @@ Based on strumming exercise seen in this [video by JustinGuitar](https://www.you
 1. `npm run build`
 2. output goes to `./dist`
 
+## Serve (built site)
+
+1. npm run serve
+2. <http://localhost:8080>
+
+## Clean build folder
+
+1. npm run clean
+
 ## References
 
 - <https://www.11ty.dev>
