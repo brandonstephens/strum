@@ -8,10 +8,22 @@
     <script src="/scripts/app.js" type="module"></script>
   </head>
   <body class="bg-coolGray-800">
-    <div class="max-w-2xl mx-auto py-20 space-y-20 p-4">
-      <h1 class="text-8xl font-thin text-transparent bg-gradient-to-r from-blue-500 to-purple-800 bg-clip-text">
-        Strum Practice
-      </h1>
+    <div class="max-w-2xl mx-auto py-20 space-y-20 px-4">
+      <div class="md:flex justify-between items-center">
+        <h1
+          class="text-7xl font-thin text-transparent bg-gradient-to-r from-blue-500 to-purple-800 bg-clip-text mb-2 md:mb-0"
+        >
+          Strum Practice
+        </h1>
+        <div>
+          <button
+            id="shuffle"
+            class="bg-coolGray-700 py-2 px-4 rounded-lg text-coolGray-900 hover:text-purple-500 transform transition-transform ease-in duration-75 hover:scale-105 active:scale-95 shadow-lg"
+          >
+            🎲 shuffle
+          </button>
+        </div>
+      </div>
 
       <div id="strumPattern" class="grid grid-cols-4 gap-4">
         <div class="space-y-4">
@@ -37,6 +49,7 @@
           </div>
         </div>
       </div>
+
       <p class="text-coolGray-700 font-light text-sm">
         Made by
         <a class="text-coolGray-600 hover:text-blue-500" href="https://brandonstephens.me">Brandon Stephens</a>
