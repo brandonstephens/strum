@@ -60,6 +60,7 @@ Delete the `./dist` folder.
 - [ ] dark/light modes
 - [ ] add apple touch icon
 - [ ] add favicon
+- [ ] make pwa
 - [ ] make repo public
 - [ ] try audio apis to make noises
 - [ ] add playback speed
