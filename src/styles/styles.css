@@ -11,7 +11,7 @@
 }
 
 .strum-up {
-  @apply bg-blue-400 border-blue-500 ring-blue-600  text-black;
+  @apply bg-teal-400 border-teal-500 ring-teal-600  text-black;
 }
 
 .strum-inactive {
@@ -19,7 +19,7 @@
 }
 
 .beat-title {
-  @apply border-b-2 border-coolGray-700 mb-4 text-2xl text-coolGray-400 font-extrabold;
+  @apply border-b-2 border-coolGray-700 mb-4 text-2xl text-coolGray-400 font-bold;
 }
 
 @tailwind utilities;
