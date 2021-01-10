@@ -61,9 +61,9 @@ Delete the `./dist` folder.
 - [ ] add apple touch icon
 - [ ] add favicon
 - [ ] make pwa
+- [ ] add some sort of buy me a beer button
 - [ ] make repo public
 - [ ] try audio apis to make noises
 - [ ] add playback controls (play, pause)
 - [ ] add ajustable playback speed (faster, slower)
-- [ ] add some sort of buy me a beer button
 - [ ] add multiple time signatures
