@@ -17,14 +17,8 @@ const getState = () => {
   return Object.entries(beats).map((beat) => (beat[1].classList.contains(CLASS_INACTIVE) ? 0 : 1))
 }
 
-const toggleBeat = (target) => {
-  // update screen reader label
-  const isDown = target.querySelector('.sr-only').innerHTML.includes('down')
-  const isActive = !target.querySelector('.sr-only').innerHTML.includes('strum')
-  target.querySelector('.sr-only').innerHTML = screenReaderLabel(isDown, isActive)
-
-  target.classList.toggle(CLASS_INACTIVE)
-  updateUrl(getState())
+const screenReaderLabel = (isDown, isActive) => {
+  return `${isDown ? 'down' : 'up'} ${isActive ? 'strum' : 'rest'}`
 }
 
 const getQueryParams = () => {
@@ -40,23 +34,29 @@ const getQueryParams = () => {
   )
 }
 
-const screenReaderLabel = (isDown, isActive) => {
-  return `${isDown ? 'down' : 'up'} ${isActive ? 'strum' : 'rest'}`
-}
-
 const updateState = (state) => {
   const beats = document.querySelectorAll('[id^="beat"]')
 
   // reset
   Object.entries(beats).forEach((beat) => beat[1].classList.remove(CLASS_INACTIVE))
-  Object.entries(beats).forEach((beat) => (beat[1].querySelector('.sr-only').innerHTML = '')) // screen reader label
+  Object.entries(beats).forEach((beat) => (beat[1].querySelector('.sr-only').innerHTML = ''))
 
   // update
   Object.entries(beats).forEach((beat, index) => (state[index] === 0 ? beat[1].classList.add(CLASS_INACTIVE) : null))
   Object.entries(beats).forEach(
     (beat, index) =>
-      (beat[1].querySelector('.sr-only').innerHTML = screenReaderLabel(index % 2 === 0, state[index] === 1)) // sr label
+      (beat[1].querySelector('.sr-only').innerHTML = screenReaderLabel(index % 2 === 0, state[index] === 1))
   )
+}
+
+const toggleBeat = (target) => {
+  // update screen reader label
+  const isDown = target.querySelector('.sr-only').innerHTML.includes('down')
+  const isActive = !target.querySelector('.sr-only').innerHTML.includes('strum')
+  target.querySelector('.sr-only').innerHTML = screenReaderLabel(isDown, isActive)
+
+  target.classList.toggle(CLASS_INACTIVE)
+  updateUrl(getState())
 }
 
 const shuffleState = () => {

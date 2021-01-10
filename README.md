@@ -36,6 +36,11 @@ Delete the `./dist` folder.
 
 1. npm run clean
 
+## Accessibility
+
+- [Lighthouse](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fstrum.bsteph.com)
+- [Web accessibility evaluation tool](https://wave.webaim.org/report#/https://strum.bsteph.com)
+
 ## References
 
 - <https://www.11ty.dev>
