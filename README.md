@@ -63,6 +63,7 @@ Delete the `./dist` folder.
 - [ ] make pwa
 - [ ] make repo public
 - [ ] try audio apis to make noises
-- [ ] add playback speed
+- [ ] add playback controls (play, pause)
+- [ ] add ajustable playback speed (faster, slower)
 - [ ] add some sort of buy me a beer button
 - [ ] add multiple time signatures
