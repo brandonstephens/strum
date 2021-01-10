@@ -56,7 +56,7 @@ Delete the `./dist` folder.
 - [x] add query params for loading specific patterns
 - [x] shuffle button for random strum patterns
 - [x] add screen reader friendly labels to buttons
-- [ ] pick out better colorblind friendly colors/contrasts
+- [x] pick out better colorblind friendly colors/contrasts
 - [ ] dark/light modes
 - [ ] add apple touch icon
 - [ ] add favicon
