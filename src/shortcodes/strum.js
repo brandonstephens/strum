@@ -3,5 +3,7 @@ module.exports = function (beat) {
   const icon = isDown ? '↓' : '↑'
   const className = isDown ? 'strum-down' : 'strum-up'
 
-  return `<button id="beat_${beat}" class="strum ${className}">${icon}</button>`
+  return `<button id="beat_${beat}" class="strum ${className}">${icon} 
+  <span class="sr-only"></span>
+  </button>`
 }

@@ -1,9 +1,7 @@
 // -----------------------------------------------------------------------------
 // Constants
 // -----------------------------------------------------------------------------
-const DOWN = 'strum-down'
-const UP = 'strum-up'
-const INACTIVE = 'strum-inactive'
+const CLASS_INACTIVE = 'strum-inactive'
 
 // -----------------------------------------------------------------------------
 // Functions
@@ -16,11 +14,16 @@ const updateUrl = (array) => {
 
 const getState = () => {
   const beats = document.querySelectorAll('[id^="beat"]')
-  return Object.entries(beats).map((beat) => (beat[1].classList.contains(INACTIVE) ? 0 : 1))
+  return Object.entries(beats).map((beat) => (beat[1].classList.contains(CLASS_INACTIVE) ? 0 : 1))
 }
 
 const toggleBeat = (target) => {
-  target.classList.toggle(INACTIVE)
+  // update screen reader label
+  const isDown = target.querySelector('.sr-only').innerHTML.includes('down')
+  const isActive = !target.querySelector('.sr-only').innerHTML.includes('strum')
+  target.querySelector('.sr-only').innerHTML = screenReaderLabel(isDown, isActive)
+
+  target.classList.toggle(CLASS_INACTIVE)
   updateUrl(getState())
 }
 
@@ -37,10 +40,23 @@ const getQueryParams = () => {
   )
 }
 
+const screenReaderLabel = (isDown, isActive) => {
+  return `${isDown ? 'down' : 'up'} ${isActive ? 'strum' : 'rest'}`
+}
+
 const updateState = (state) => {
   const beats = document.querySelectorAll('[id^="beat"]')
-  Object.entries(beats).map((beat) => beat[1].classList.remove(INACTIVE))
-  Object.entries(beats).map((beat, index) => (state[index] === 0 ? beat[1].classList.add(INACTIVE) : null))
+
+  // reset
+  Object.entries(beats).forEach((beat) => beat[1].classList.remove(CLASS_INACTIVE))
+  Object.entries(beats).forEach((beat) => (beat[1].querySelector('.sr-only').innerHTML = '')) // screen reader label
+
+  // update
+  Object.entries(beats).forEach((beat, index) => (state[index] === 0 ? beat[1].classList.add(CLASS_INACTIVE) : null))
+  Object.entries(beats).forEach(
+    (beat, index) =>
+      (beat[1].querySelector('.sr-only').innerHTML = screenReaderLabel(index % 2 === 0, state[index] === 1)) // sr label
+  )
 }
 
 const shuffleState = () => {
