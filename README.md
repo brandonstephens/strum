@@ -64,10 +64,9 @@ Delete the `./dist` folder.
 - [x] pick out better colorblind friendly colors/contrasts
 - [x] 🐞 anchors broken
 - [x] 🐞 active state is stuck on touch devices
-- [ ] try gradients on beats
+- [x] add apple touch icon
+- [x] add favicon
 - [ ] dark/light modes
-- [ ] add apple touch icon
-- [ ] add favicon
 - [ ] make pwa
 - [ ] add some sort of buy me a beer button
 - [ ] make repo public

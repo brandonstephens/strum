@@ -22,16 +22,16 @@
 }
 
 .strum-down {
-  @apply bg-yellow-400;
-  @apply border-yellow-500;
-  @apply ring-yellow-600;
+  @apply bg-amber-400;
+  @apply border-amber-500;
+  @apply ring-amber-600;
   @apply text-black;
 }
 
 .strum-up {
-  @apply bg-teal-400;
-  @apply border-teal-500;
-  @apply ring-teal-600;
+  @apply bg-cyan-400;
+  @apply border-cyan-500;
+  @apply ring-cyan-600;
   @apply text-black;
 }
 

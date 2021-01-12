@@ -6,6 +6,7 @@ module.exports = (eleventyConfig) => {
   })
 
   eleventyConfig.addPassthroughCopy('./src/scripts/*.js')
+  eleventyConfig.addPassthroughCopy('./src/assets')
 
   eleventyConfig.addShortcode('strum', strum)
 
