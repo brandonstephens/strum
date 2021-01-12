@@ -3,23 +3,53 @@
 
 /* Custom stuffs here */
 .strum {
-  @apply transform scale-75 hover:scale-95 active:scale-90 transition-transform ease-in duration-75 rounded-full w-16 h-16 border-8 md:ring-8 flex justify-center items-center cursor-pointer;
+  @apply transform;
+  @apply scale-75;
+  @apply rounded-full;
+  @apply w-16;
+  @apply h-16;
+  @apply border-8;
+  @apply md:ring-8;
+  @apply flex;
+  @apply justify-center;
+  @apply items-center;
+  @apply cursor-pointer;
+
+  @apply fine:transition-transform;
+  @apply fine:ease-in;
+  @apply fine:duration-75;
+  @apply fine:hover:scale-90;
 }
 
 .strum-down {
-  @apply bg-yellow-400 border-yellow-500 ring-yellow-600  text-black;
+  @apply bg-yellow-400;
+  @apply border-yellow-500;
+  @apply ring-yellow-600;
+  @apply text-black;
 }
 
 .strum-up {
-  @apply bg-teal-400 border-teal-500 ring-teal-600  text-black;
+  @apply bg-teal-400;
+  @apply border-teal-500;
+  @apply ring-teal-600;
+  @apply text-black;
 }
 
 .strum-inactive {
-  @apply bg-coolGray-400 border-coolGray-500 ring-coolGray-600 text-black opacity-50;
+  @apply bg-coolGray-400;
+  @apply border-coolGray-500;
+  @apply ring-coolGray-600;
+  @apply text-black;
+  @apply opacity-50;
 }
 
 .beat-title {
-  @apply border-b-2 border-coolGray-700 mb-4 text-2xl text-coolGray-400 font-bold;
+  @apply border-b-2;
+  @apply border-coolGray-700;
+  @apply mb-4;
+  @apply text-2xl;
+  @apply text-coolGray-400;
+  @apply font-bold;
 }
 
 @tailwind utilities;

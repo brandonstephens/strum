@@ -62,8 +62,8 @@ Delete the `./dist` folder.
 - [x] shuffle button for random strum patterns
 - [x] add screen reader friendly labels to buttons
 - [x] pick out better colorblind friendly colors/contrasts
-- [ ] 🐞 anchors broken
-- [ ] 🐞 active state is stuck on touch devices
+- [x] 🐞 anchors broken
+- [x] 🐞 active state is stuck on touch devices
 - [ ] try gradients on beats
 - [ ] dark/light modes
 - [ ] add apple touch icon

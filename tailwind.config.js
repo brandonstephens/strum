@@ -5,7 +5,11 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     colors: { ...colors, transparent: 'transparent', current: 'currentColor' },
-    extend: {},
+    extend: {
+      screens: {
+        fine: { raw: '(pointer: fine)' },
+      },
+    },
   },
   variants: {
     extend: {
