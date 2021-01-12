@@ -62,13 +62,14 @@ Delete the `./dist` folder.
 - [x] shuffle button for random strum patterns
 - [x] add screen reader friendly labels to buttons
 - [x] pick out better colorblind friendly colors/contrasts
-- [x] 🐞 anchors broken
-- [x] 🐞 active state is stuck on touch devices
+- [x] BUG anchors broken
+- [x] BUG active state is stuck on touch devices
 - [x] add apple touch icon
 - [x] add favicon
 - [ ] add a share button
 - [ ] make pwa
 - [ ] dark/light modes
+- [ ] print style sheet
 - [ ] add some sort of buy me a beer button
 - [ ] make repo public
-- [ ] add multiple time signatures
+- [ ] add support for multiple time signatures
