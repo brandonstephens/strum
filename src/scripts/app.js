@@ -70,18 +70,16 @@ const shuffleState = () => {
 // -----------------------------------------------------------------------------
 updateState(getQueryParams())
 
-document.addEventListener('click', (event) => {
-  event.preventDefault()
+const shuffleButton = document.getElementById('shuffle')
+shuffleButton.addEventListener('click', (event) => {
+  shuffleState()
+})
 
+const strumPattern = document.getElementById('strumPattern')
+
+strumPattern.addEventListener('click', (event) => {
   if (event.target.id.includes('beat')) {
     toggleBeat(event.target)
     return
   }
-
-  if (event.target.id.includes('shuffle')) {
-    shuffleState()
-    return
-  }
-
-  return
 })
