@@ -66,11 +66,9 @@ Delete the `./dist` folder.
 - [x] 🐞 active state is stuck on touch devices
 - [x] add apple touch icon
 - [x] add favicon
-- [ ] dark/light modes
+- [ ] add a share button
 - [ ] make pwa
+- [ ] dark/light modes
 - [ ] add some sort of buy me a beer button
 - [ ] make repo public
-- [ ] try audio apis to make noises
-- [ ] add playback controls (play, pause)
-- [ ] add ajustable playback speed (faster, slower)
 - [ ] add multiple time signatures
