@@ -68,6 +68,7 @@ Delete the `./dist` folder.
 - [x] add favicon
 - [ ] add a share button
 - [ ] make pwa
+- [ ] try inline css for speed <https://www.11ty.dev/docs/quicktips/inline-css/>
 - [ ] dark/light modes
 - [ ] print style sheet
 - [ ] add some sort of buy me a beer button
