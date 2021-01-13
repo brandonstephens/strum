@@ -67,8 +67,9 @@ Delete the `./dist` folder.
 - [x] add apple touch icon
 - [x] add favicon
 - [x] add a share button
+- [x] try inline css for speed
+- [x] change the statusbar color on iOS
 - [ ] make pwa
-- [ ] try inline css for speed <https://www.11ty.dev/docs/quicktips/inline-css/>
 - [ ] dark/light modes
 - [ ] print style sheet
 - [ ] add some sort of buy me a beer button
