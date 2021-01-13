@@ -75,8 +75,22 @@ shuffleButton.addEventListener('click', (event) => {
   shuffleState()
 })
 
-const strumPattern = document.getElementById('strumPattern')
+const shareButton = document.getElementById('share')
+shareButton.addEventListener('click', (event) => {
+  if (navigator.share) {
+    navigator
+      .share({
+        title: 'Strum | Guitar Practice',
+        url: window.location,
+      })
+      .then(() => console.log('Successful share'))
+      .catch((error) => console.log('Error sharing', error))
+  } else {
+    console.log('Share not supported on this browser, do it the old way.')
+  }
+})
 
+const strumPattern = document.getElementById('strumPattern')
 strumPattern.addEventListener('click', (event) => {
   if (event.target.id.includes('beat')) {
     toggleBeat(event.target)

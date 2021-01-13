@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>🎸 Strum Practice | Guitar Helper</title>
+    <title>Strum | Guitar Helper</title>
     <link rel="stylesheet" href="/style.css" />
     <script src="/scripts/app.js" type="module"></script>
     <link rel="shortcut icon" href="/assets/favicon.png" type="image/png" />
@@ -20,14 +20,22 @@
           Strum Practice
         </h1>
 
-        <div>
+        <nav class="space-x-2 pt-4">
           <button
             id="shuffle"
             class="bg-coolGray-700 py-2 px-4 rounded-lg text-coolGray-100 hover:text-amber-500 transform transition-transform ease-in duration-75 hover:scale-105 active:scale-95 shadow-lg"
+            title="shuffle"
           >
-            🎲 shuffle
+            🎲 <span class="sr-only">shuffle</span>
           </button>
-        </div>
+          <button
+            id="share"
+            class="bg-coolGray-700 py-2 px-4 rounded-lg text-coolGray-100 hover:text-amber-500 transform transition-transform ease-in duration-75 hover:scale-105 active:scale-95 shadow-lg"
+            title="share"
+          >
+            📤 <span class="sr-only">share</span>
+          </button>
+        </nav>
       </header>
 
       <main id="strumPattern" class="grid grid-cols-4 gap-4">
