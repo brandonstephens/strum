@@ -1,7 +1,7 @@
 {
   "name": "strum",
   "version": "1.0.0",
-  "description": "A helping hand for learning to strum on the guitar",
+  "description": "A simple tool to help practice different strumming patterns.",
   "scripts": {
     "clean": "rm -rf ./dist && rm -rf ./tmp",
     "start": "postcss ./src/styles/styles.css --o ./tmp/style.css && eleventy --serve & postcss ./src/styles/styles.css --o ./tmp/style.css --watch",
