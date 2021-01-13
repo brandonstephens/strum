@@ -6,7 +6,7 @@ const CLASS_INACTIVE = 'strum-inactive'
 // -----------------------------------------------------------------------------
 // Functions
 // -----------------------------------------------------------------------------
-export const randomInt = (min, max) => Math.floor(Math.random() * (max - min + 1) + min)
+const randomInt = (min, max) => Math.floor(Math.random() * (max - min + 1) + min)
 
 const updateUrl = (array) => {
   window.history.pushState(null, '', `?s=${array.join('')}`)

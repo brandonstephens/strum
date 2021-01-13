@@ -2,14 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Strum | Guitar Helper</title>
-    <link rel="stylesheet" href="/style.css" media="screen" />
-    <script src="/scripts/app.js" type="module"></script>
-    <link rel="shortcut icon" href="/assets/favicon.png" type="image/png" />
-    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="apple-mobile-web-app-title" content="Strum" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="shortcut icon" href="/assets/favicon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
+    {% capture css %}{% include ../tmp/style.css %}{% endcapture %}
+    <style>
+      {{ css | safe }}
+    </style>
   </head>
   <body class="bg-coolGray-800">
     <div class="max-w-2xl mx-auto py-20 space-y-20 px-4">
@@ -19,7 +21,6 @@
         >
           Strum Practice
         </h1>
-
         <nav class="space-x-2 pt-4">
           <button id="shuffle" class="button-base" title="shuffle">🎲 <span class="sr-only">shuffle</span></button>
           <button id="share" class="button-base button-disabled" title="share">
@@ -69,5 +70,10 @@
         >
       </footer>
     </div>
+
+    {% capture js %}{% include ./scripts/app.js %}{% endcapture %}
+    <script>
+      {{ js | safe }} // prettier-ignore
+    </script>
   </body>
 </html>

@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "A helping hand for learning to strum on the guitar",
   "scripts": {
-    "clean": "rm -rf ./dist",
-    "start": "eleventy --serve & postcss ./src/styles/styles.css --o ./dist/style.css --watch",
-    "build": "ELEVENTY_PRODUCTION=true eleventy && NODE_ENV=production postcss ./src/styles/styles.css --o ./dist/style.css",
+    "clean": "rm -rf ./dist && rm -rf ./tmp",
+    "start": "postcss ./src/styles/styles.css --o ./tmp/style.css && eleventy --serve & postcss ./src/styles/styles.css --o ./tmp/style.css --watch",
+    "build": "NODE_ENV=production postcss ./src/styles/styles.css --o ./tmp/style.css && ELEVENTY_PRODUCTION=true eleventy && rm -rf ./tmp",
     "serve": "browser-sync start --server ./dist --no-notify --no-ghost-mode"
   },
   "keywords": [
@@ -18,9 +18,12 @@
   "devDependencies": {
     "@11ty/eleventy": "^0.11.0",
     "autoprefixer": "^10.1.0",
+    "html-minifier": "^4.0.0",
+    "html-minifier-terser": "^5.1.1",
     "postcss": "^8.2.1",
     "postcss-cli": "^8.3.0",
     "prettier": "2.2.1",
     "tailwindcss": "^2.0.2"
-  }
+  },
+  "dependencies": {}
 }
