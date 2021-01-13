@@ -28,7 +28,7 @@ Serve the `./dist` directory.
 
 1. npm run build
 2. npm run serve
-3. <http://localhost:8080>
+3. <http://localhost:3000>
 
 ### Clean build folder
 

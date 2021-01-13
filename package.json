@@ -6,7 +6,7 @@
     "clean": "rm -rf ./dist",
     "start": "eleventy --serve & postcss ./src/styles/styles.css --o ./dist/style.css --watch",
     "build": "ELEVENTY_PRODUCTION=true eleventy && NODE_ENV=production postcss ./src/styles/styles.css --o ./dist/style.css",
-    "serve": "serve --no-clipboard --listen 8080 dist"
+    "serve": "browser-sync start --server ./dist --no-notify --no-ghost-mode"
   },
   "keywords": [
     "guitar",
@@ -21,7 +21,6 @@
     "postcss": "^8.2.1",
     "postcss-cli": "^8.3.0",
     "prettier": "2.2.1",
-    "serve": "^11.3.2",
     "tailwindcss": "^2.0.2"
   }
 }
