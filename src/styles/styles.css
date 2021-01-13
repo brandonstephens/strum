@@ -52,4 +52,29 @@
   @apply font-bold;
 }
 
+.button-base {
+  @apply bg-coolGray-700;
+  @apply py-2;
+  @apply px-4;
+  @apply rounded-lg;
+  @apply text-coolGray-100;
+  @apply hover:text-amber-500;
+  @apply transform;
+  @apply transition-transform;
+  @apply ease-in;
+  @apply duration-75;
+  @apply hover:scale-105;
+  @apply active:scale-95;
+  @apply shadow-lg;
+}
+
+.button-disabled {
+  @apply opacity-25;
+  @apply shadow-none;
+  @apply hover:scale-100;
+  @apply active:scale-100;
+  @apply active:scale-100;
+  @apply cursor-not-allowed;
+}
+
 @tailwind utilities;

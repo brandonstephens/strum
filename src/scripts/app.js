@@ -76,17 +76,19 @@ shuffleButton.addEventListener('click', (event) => {
 })
 
 const shareButton = document.getElementById('share')
+navigator.share && shareButton.classList.remove('button-disabled')
 shareButton.addEventListener('click', (event) => {
   if (navigator.share) {
     navigator
       .share({
         title: 'Strum | Guitar Practice',
+        text: 'A simple tool to help practice different strumming patterns.',
         url: window.location,
       })
       .then(() => console.log('Successful share'))
       .catch((error) => console.log('Error sharing', error))
   } else {
-    alert('Sorry, share not supported on this browser (copy the url to share).')
+    alert('Sorry, share not supported on this browser. You can copy the url to share your pattern.')
   }
 })
 
