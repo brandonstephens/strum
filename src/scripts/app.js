@@ -86,7 +86,7 @@ shareButton.addEventListener('click', (event) => {
       .then(() => console.log('Successful share'))
       .catch((error) => console.log('Error sharing', error))
   } else {
-    console.log('Share not supported on this browser, do it the old way.')
+    alert('Sorry, share not supported on this browser (copy the url to share).')
   }
 })
 
