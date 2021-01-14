@@ -1,5 +1,7 @@
 # Strum
 
+![strum hero image](cover.png)
+
 [![Netlify Status](https://api.netlify.com/api/v1/badges/cecf8501-8458-495e-a9d6-75211e041e71/deploy-status)](https://app.netlify.com/sites/fervent-leakey-947339/deploys)
 
 <https://strum.bsteph.com>
