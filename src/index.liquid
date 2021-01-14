@@ -8,8 +8,11 @@
     <meta name="apple-mobile-web-app-title" content="Strum" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="theme-color" content="#fbbf24" />
+    <meta name="background-color" content="#1f2937" />
     <link rel="shortcut icon" href="/assets/favicon.png" type="image/png" />
     <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.json" />
     {% capture css %}{% include ../tmp/style.css %}{% endcapture %}
     <style>
       {{ css | safe }}
@@ -76,6 +79,11 @@
     {% capture js %}{% include ./scripts/app.js %}{% endcapture %}
     <script>
       {{ js | safe }} // prettier-ignore
+    </script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/serviceWorker.js')
+      }
     </script>
   </body>
 </html>

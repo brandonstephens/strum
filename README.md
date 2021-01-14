@@ -45,6 +45,7 @@ Delete the `./dist` folder.
 
 - <https://www.11ty.dev>
 - <https://tailwindcss.com>
+- [Service Workers](https://youtu.be/wEPeaJgbIxQ)
 
 ## Hosting Details
 
@@ -69,7 +70,7 @@ Delete the `./dist` folder.
 - [x] add a share button
 - [x] try inline css for speed
 - [x] change the statusbar color on iOS
-- [ ] make pwa
+- [x] make pwa
 - [ ] dark/light modes
 - [ ] print style sheet
 - [ ] add some sort of buy me a beer button

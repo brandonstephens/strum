@@ -1,0 +1,23 @@
+{
+  "name": "Strum",
+  "short_name": "Strum",
+  "description": "A simple tool to help practice different strumming patterns.",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "/assets/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/assets/splash.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ],
+  "theme_color": "#fbbf24",
+  "background_color": "#1f2937",
+  "display": "fullscreen"
+}

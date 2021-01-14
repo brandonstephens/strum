@@ -8,6 +8,10 @@ module.exports = (eleventyConfig) => {
 
   eleventyConfig.addPassthroughCopy('./src/assets')
 
+  //pwa stuff
+  eleventyConfig.addPassthroughCopy('./src/serviceWorker.js')
+  eleventyConfig.addPassthroughCopy('./src/manifest.json')
+
   eleventyConfig.addShortcode('strum', strum)
 
   if (process.env.ELEVENTY_PRODUCTION) {
