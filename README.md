@@ -43,13 +43,19 @@ Delete the `./dist` folder.
 - [Lighthouse](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fstrum.bsteph.com)
 - [Web accessibility evaluation tool](https://wave.webaim.org/report#/https://strum.bsteph.com)
 
-**Note**: To get 100% on accessibility under the Lighthouse metric you need to update the `viewport` meta tag to be:
+**Note on viewport**: To get 100% on accessibility under the Lighthouse metric you need to update the `viewport` meta tag to be:
 
 ```
 <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=5" />
 ```
 
 I've chosen not to do this as it causes the site to zoom in frequently while tapping the UI.
+
+**Note on colors**
+
+Special care was taken to pick colors that worked well for various forms of color blindness. [XScope](https://xscopeapp.com) was used to preview colors using the loupe tool.
+
+![color blindness preview](color-blindness-preview.gif)
 
 ## References
 
