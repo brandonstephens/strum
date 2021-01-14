@@ -69,10 +69,10 @@ Icons and hero image made using [Figma](https://www.figma.com).
 
 [Strum Design Document](https://www.figma.com/file/oIxMenFdF5HbySnAazHw0D/Strum?node-id=0%3A1)
 
-## 🌎 Hosting Details
+## 🌎 Hosting
 
-- CI & Hosting on Netlify.
-- GoSquared analytics added as post processing step in Netlify.
+- CI & Hosting on [Netlify](https://www.netlify.com).
+- [GoSquared](https://www.gosquared.com) analytics added as post processing step in Netlify.
 
 ## 🗺 Roadmap
 
