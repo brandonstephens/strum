@@ -8,14 +8,14 @@
 
 Based on strumming exercise seen in this [video by JustinGuitar](https://www.youtube.com/watch?v=CjM5fyXoV8w)
 
-## Installation
+## 💾 Installation
 
 1. `nvm use`
 2. `npm install`
 3. `npm start`
 4. <http://localhost:8081>
 
-## Commands
+## 🖥 Commands
 
 ### Build
 
@@ -38,7 +38,7 @@ Delete the `./dist` folder.
 
 1. npm run clean
 
-## Accessibility
+## ♿️ Accessibility
 
 - [Lighthouse](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fstrum.bsteph.com)
 - [Web accessibility evaluation tool](https://wave.webaim.org/report#/https://strum.bsteph.com)
@@ -57,22 +57,22 @@ Special care was taken to pick colors that worked well for various forms of colo
 
 ![color blindness preview](color-blindness-preview.gif)
 
-## References
+## 📚 References
 
 - <https://www.11ty.dev>
 - <https://tailwindcss.com>
 - [Service Workers](https://youtu.be/wEPeaJgbIxQ)
 
-## Icons
+## 👾 Icons
 
 Icons and hero image made using [Figma](https://www.figma.com).
 
-## Hosting Details
+## 🌎 Hosting Details
 
 - CI & Hosting on Netlify.
 - GoSquared analytics added as post processing step in Netlify.
 
-## Roadmap
+## 🗺 Roadmap
 
 - [x] tailwind setup
 - [x] prettier setup
