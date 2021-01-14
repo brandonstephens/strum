@@ -57,6 +57,10 @@ I've chosen not to do this as it causes the site to zoom in frequently while tap
 - <https://tailwindcss.com>
 - [Service Workers](https://youtu.be/wEPeaJgbIxQ)
 
+## Icons
+
+Icons and hero image made using [Figma](https://www.figma.com).
+
 ## Hosting Details
 
 - CI & Hosting on Netlify.
