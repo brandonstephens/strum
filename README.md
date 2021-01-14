@@ -53,7 +53,7 @@ To get 100% on accessibility under the Lighthouse metric you need to update the 
 I've chosen not to do this as it causes the site to zoom in frequently while tapping the UI.
 
 **Note on colors**  
-Special care was taken to pick colors that worked well for various forms of color blindness. [XScope](https://xscopeapp.com) was used to preview colors using the loupe tool.
+Special care was taken to pick colors that worked well for various forms of color blindness. [xScope](https://xscopeapp.com) was used to preview colors using the loupe tool.
 
 ![color blindness preview](color-blindness-preview.gif)
 
@@ -61,11 +61,13 @@ Special care was taken to pick colors that worked well for various forms of colo
 
 - <https://www.11ty.dev>
 - <https://tailwindcss.com>
-- [Service Workers](https://youtu.be/wEPeaJgbIxQ)
+- [Google on service workers](https://youtu.be/wEPeaJgbIxQ)
 
 ## 👾 Icons
 
 Icons and hero image made using [Figma](https://www.figma.com).
+
+[Strum Design Document](https://www.figma.com/file/oIxMenFdF5HbySnAazHw0D/Strum?node-id=0%3A1)
 
 ## 🌎 Hosting Details
 
