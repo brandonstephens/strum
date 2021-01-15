@@ -4,7 +4,12 @@ const htmlmin = require('html-minifier-terser')
 module.exports = (eleventyConfig) => {
   eleventyConfig.setBrowserSyncConfig({
     open: 'local', // launches localhost on npm start
+    ghostMode: false,
   })
+
+  eleventyConfig.addWatchTarget('./src/scripts/')
+  eleventyConfig.addWatchTarget('./src/shortcodes/')
+  eleventyConfig.addWatchTarget('./src/styles/')
 
   eleventyConfig.addPassthroughCopy('./src/assets')
 

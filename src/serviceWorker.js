@@ -1,5 +1,5 @@
 self.addEventListener('install', (event) => {
-  const cacheName = 'static-shell-v1'
+  const cacheName = 'static-shell-2021-01-14 21.13.06'
   const resourcesToPrecache = [
     '/',
     'index.html',

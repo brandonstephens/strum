@@ -36,29 +36,34 @@
 }
 
 .strum-inactive {
-  @apply bg-coolGray-400;
-  @apply border-coolGray-500;
-  @apply ring-coolGray-600;
+  @apply bg-coolGray-300;
+  @apply border-coolGray-400;
+  @apply ring-coolGray-500;
+  @apply dark:bg-coolGray-400;
+  @apply dark:border-coolGray-500;
+  @apply dark:ring-coolGray-600;
   @apply text-black;
   @apply opacity-50;
 }
 
 .beat-title {
   @apply border-b-2;
-  @apply border-coolGray-700;
+  @apply border-coolGray-200;
+  @apply dark:border-coolGray-700;
   @apply mb-4;
   @apply text-2xl;
+  @apply text-coolGray-600;
   @apply text-coolGray-400;
   @apply font-bold;
 }
 
 .button-base {
-  @apply bg-coolGray-700;
+  @apply bg-coolGray-600;
+  @apply dark:bg-coolGray-700;
   @apply py-2;
   @apply px-4;
   @apply rounded-lg;
   @apply text-coolGray-100;
-  @apply hover:text-amber-500;
   @apply transform;
   @apply transition-transform;
   @apply ease-in;

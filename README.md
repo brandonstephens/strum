@@ -93,7 +93,7 @@ Icons and hero image made using [Figma](https://www.figma.com).
 - [x] try inline css for speed
 - [x] change the statusbar color on iOS
 - [x] make pwa
-- [ ] dark/light modes
+- [x] dark/light modes
 - [ ] print style sheet
 - [ ] add some sort of buy me a beer button
 - [ ] make repo public

@@ -65,10 +65,32 @@ const shuffleState = () => {
   updateUrl(randomArray)
 }
 
+const toggleTheme = () => {
+  const themeLabel = document.getElementById('label')
+  const isDark = localStorage.theme === 'dark'
+
+  if (isDark) {
+    document.querySelector('html').classList.remove('dark')
+    localStorage.theme = 'light'
+    themeLabel.innerHTML = '☀️'
+  } else {
+    document.querySelector('html').classList.add('dark')
+    localStorage.theme = 'dark'
+    themeLabel.innerHTML = '🌙'
+  }
+}
+
+const initToggle = () => {
+  const isDark = localStorage.theme === 'dark'
+  const themeLabel = document.getElementById('label')
+  themeLabel.innerHTML = isDark ? '🌙' : '☀️'
+}
+
 // -----------------------------------------------------------------------------
 // Init App
 // -----------------------------------------------------------------------------
 updateState(getQueryParams())
+initToggle()
 
 const shuffleButton = document.getElementById('shuffle')
 shuffleButton.addEventListener('click', (event) => {
@@ -90,6 +112,11 @@ shareButton.addEventListener('click', (event) => {
   } else {
     alert('Sorry, share not supported on this browser. You can copy the url to share your pattern.')
   }
+})
+
+const themeButton = document.getElementById('theme')
+themeButton.addEventListener('click', (event) => {
+  toggleTheme()
 })
 
 const strumPattern = document.getElementById('strumPattern')
