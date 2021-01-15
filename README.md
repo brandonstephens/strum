@@ -1,6 +1,6 @@
 # Strum
 
-![strum hero image](cover.png)
+![strum hero image](docs/cover.png)
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/cecf8501-8458-495e-a9d6-75211e041e71/deploy-status)](https://app.netlify.com/sites/fervent-leakey-947339/deploys)
 
@@ -55,7 +55,7 @@ I've chosen not to do this as it causes the site to zoom in frequently while tap
 **Note on colors**  
 Special care was taken to pick colors that worked well for various forms of color blindness. [xScope](https://xscopeapp.com) was used to preview colors using the loupe tool.
 
-![color blindness preview](color-blindness-preview.gif)
+![color blindness preview](doc/color-blindness-preview.gif)
 
 ## 📚 References
 
@@ -92,7 +92,7 @@ Icons and hero image made using [Figma](https://www.figma.com).
 - [x] add a share button
 - [x] try inline css for speed
 - [x] change the statusbar color on iOS
-- [x] make pwa
+- [x] make pwa (removed didnt like)
 - [x] dark/light modes
 - [ ] print style sheet
 - [ ] add some sort of buy me a beer button
