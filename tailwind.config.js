@@ -1,7 +1,7 @@
 const colors = require('tailwindcss/colors')
 
 module.exports = {
-  purge: ['./src/**/*.js', './src/**/*.liquid'], // only look at the built dir
+  purge: ['./src/**/*.js', './src/**/*.liquid'],
   darkMode: 'class',
   theme: {
     colors: { ...colors, transparent: 'transparent', current: 'currentColor' },
