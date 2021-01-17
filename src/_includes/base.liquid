@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <title>{{ site.title }} | Guitar Helper</title>
+    <meta name="description" content="{{ site.description }}" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-title" content="Strum" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="theme-color" content="#fbbf24" />
+    <meta name="background-color" content="#1f2937" />
+    <link rel="shortcut icon" href="/assets/favicon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="stylesheet" href="/styles/styles.css" inline />
+    <script>
+      {% include _localStorage.js %}
+    </script>
+  </head>
+  <body id="body" class="bg-coolGray-50 dark:bg-coolGray-800">
+    <div class="max-w-2xl mx-auto py-20 space-y-20 px-4">
+      <header class="md:flex justify-between items-center">
+        <h1
+          class="text-7xl font-thin text-transparent bg-gradient-to-br from-yellow-400 via-amber-500 to-orange-600 bg-clip-text mb-2 md:mb-0"
+        >
+          Strum Practice
+        </h1>
+
+        <nav class="space-x-2 pt-4">
+          <button id="shuffle" class="button-base" title="shuffle">🎲 <span class="sr-only">shuffle</span></button>
+
+          <button id="share" class="button-base button-disabled" title="share">
+            📤 <span class="sr-only">share</span>
+          </button>
+
+          <button id="theme" class="button-base" title="theme">
+            <span id="label">🌑</span> <span class="sr-only">toggle theme</span>
+          </button>
+        </nav>
+      </header>
+
+      {{ content | safe }}
+
+      <footer class="text-coolGray-600 dark:text-coolGray-400 font-light text-sm">
+        Made by
+        <a
+          class="text-coolGray-800 dark:text-coolGray-200 hover:text-amber-500 border-b-2 border-amber-500 dark:border-amber-800"
+          href="https://brandonstephens.me"
+          >{{ site.author }}</a
+        >
+        • Inspiration from
+        <a
+          class="text-coolGray-800 dark:text-coolGray-200 hover:text-cyan-500 border-b-2 border-cyan-500 dark:border-cyan-800"
+          href="https://www.youtube.com/watch?v=CjM5fyXoV8w"
+          >JustinGuitar</a
+        >
+      </footer>
+    </div>
+
+    <script src="scripts/app.js" inline></script>
+  </body>
+</html>
