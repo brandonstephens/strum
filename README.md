@@ -17,6 +17,11 @@ Based on strumming exercise seen in this [video by JustinGuitar](https://www.you
 
 ## 🖥 Commands
 
+### Dev
+
+1. `npm start`
+2. <http://localhost:8081>
+
 ### Build
 
 Build production version of the site.
@@ -28,15 +33,29 @@ Build production version of the site.
 
 Serve the `./dist` directory.
 
-1. `npm run build`
-2. `npm run serve`
-3. <http://localhost:3000>
+1. `npm run serve`
+2. <http://localhost:3000>
 
 ### Clean build folder
 
-Delete the `./dist` folder.
+Delete the `./dist` folder and `./src/styles/`.
 
 1. `npm run clean`
+
+## Notes on build process
+
+**Dev**
+
+1. Gulp runs PostCSS to build Tailwind to `./src/styles.css`
+2. Eleventy runs and links to css at `./src/styles.css`
+3. Gulp watches for changes to `.src/postcss/`
+4. Eleventy watches for changes to `.src/styles`
+
+**Production**
+
+1. CSS is build via PostCSS in production mode (which purges Tailwind) via Gulp
+2. Then Eleventy runs in production mode
+3. Gulp inlines and minifys CSS, JS, HTML the eleventy output
 
 ## ♿️ Accessibility
 
@@ -61,7 +80,7 @@ Special care was taken to pick colors that worked well for various forms of colo
 
 - <https://www.11ty.dev>
 - <https://tailwindcss.com>
-- [Google on service workers](https://youtu.be/wEPeaJgbIxQ)
+- <https://gulpjs.com/>
 
 ## 👾 Icons
 
@@ -94,7 +113,7 @@ Icons and hero image made using [Figma](https://www.figma.com).
 - [x] change the statusbar color on iOS
 - [x] make pwa (removed didnt like)
 - [x] dark/light modes
-- [ ] more reliable watch/serve in dev mode
+- [x] more reliable watch/serve in dev mode
 - [ ] print style sheet
 - [ ] add some sort of buy me a beer button
 - [ ] make repo public
