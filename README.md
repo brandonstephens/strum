@@ -17,26 +17,26 @@ Based on strumming exercise seen in this [video by JustinGuitar](https://www.you
 
 ## 🖥 Commands
 
-### Dev
+### dev
 
 1. `npm start`
 2. <http://localhost:8081>
 
-### Build
+### build
 
 Build production version of the site.
 
 1. `npm run build`
 2. output goes to `./dist`
 
-### Serve
+### serve
 
 Serve the `./dist` directory.
 
 1. `npm run serve`
 2. <http://localhost:3000>
 
-### Clean build folder
+### clean
 
 Delete the `./dist` folder and `./src/styles/`.
 
@@ -49,13 +49,13 @@ Delete the `./dist` folder and `./src/styles/`.
 1. Gulp runs PostCSS to build Tailwind to `./src/styles.css`
 2. Eleventy runs and links to css at `./src/styles.css`
 3. Gulp watches for changes to `.src/postcss/`
-4. Eleventy watches for changes to `.src/styles`
+4. Eleventy watches for changes to lots of files including the output of gulp css to `.src/styles`
 
 **Production**
 
-1. CSS is build via PostCSS in production mode (which purges Tailwind) via Gulp
+1. CSS is built via PostCSS in production mode (which purges unused Tailwind classes) via Gulp
 2. Then Eleventy runs in production mode
-3. Gulp inlines and minifys CSS, JS, HTML the eleventy output
+3. Gulp inlines and minifys CSS, JS, HTML from the eleventy output
 
 ## ♿️ Accessibility
 
@@ -78,9 +78,10 @@ Special care was taken to pick colors that worked well for various forms of colo
 
 ## 📚 References
 
-- <https://www.11ty.dev>
-- <https://tailwindcss.com>
-- <https://gulpjs.com/>
+- [eleventy](https://www.11ty.dev)
+- [tailwind css](https://tailwindcss.com)
+- [gulp](https://gulpjs.com/)
+- [nvm](https://github.com/nvm-sh/nvm)
 
 ## 👾 Icons
 
@@ -114,7 +115,7 @@ Icons and hero image made using [Figma](https://www.figma.com).
 - [x] make pwa (removed didnt like)
 - [x] dark/light modes
 - [x] more reliable watch/serve in dev mode
-- [ ] print style sheet
+- [ ] add support for multiple time signatures
 - [ ] add some sort of buy me a beer button
 - [ ] make repo public
-- [ ] add support for multiple time signatures
+- [ ] print stylesheet
