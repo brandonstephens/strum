@@ -60,7 +60,8 @@ const toggleBeat = (target) => {
 }
 
 const shuffleState = () => {
-  const randomArray = Array.apply(null, Array(8)).map((x) => randomInt(0, 1))
+  const beats = document.querySelectorAll('[id^="beat"]').length
+  const randomArray = Array.apply(null, Array(beats)).map((x) => randomInt(0, 1))
   updateState(randomArray)
   updateUrl(randomArray)
 }

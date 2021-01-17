@@ -58,19 +58,20 @@
 }
 
 .button-base {
-  @apply bg-coolGray-600;
+  @apply bg-coolGray-50;
   @apply dark:bg-coolGray-700;
   @apply py-2;
   @apply px-4;
   @apply rounded-lg;
-  @apply text-coolGray-100;
+  @apply text-coolGray-500;
+  @apply dark:text-coolGray-100;
   @apply transform;
   @apply transition-transform;
   @apply ease-in;
   @apply duration-75;
   @apply hover:scale-105;
   @apply active:scale-95;
-  @apply shadow-lg;
+  @apply shadow-sm;
 }
 
 .button-disabled {

@@ -74,13 +74,14 @@ I've chosen not to do this as it causes the site to zoom in frequently while tap
 **Note on colors**  
 Special care was taken to pick colors that worked well for various forms of color blindness. [xScope](https://xscopeapp.com) was used to preview colors using the loupe tool.
 
-![color blindness preview](doc/color-blindness-preview.gif)
+![color blindness preview](docs/color-blindness-preview.gif)
 
 ## 📚 References
 
 - [eleventy](https://www.11ty.dev)
 - [tailwind css](https://tailwindcss.com)
-- [gulp](https://gulpjs.com/)
+- [gulp](https://gulpjs.com)
+- [liquid](https://liquidjs.com)
 - [nvm](https://github.com/nvm-sh/nvm)
 
 ## 👾 Icons
@@ -115,7 +116,12 @@ Icons and hero image made using [Figma](https://www.figma.com).
 - [x] make pwa (removed didnt like)
 - [x] dark/light modes
 - [x] more reliable watch/serve in dev mode
-- [ ] add support for multiple time signatures
-- [ ] add some sort of buy me a beer button
-- [ ] make repo public
-- [ ] print stylesheet
+- [x] add support for multiple time signatures
+- [x] add some sort of buy me a beer/coffee/tea button
+- [x] make repo public
+
+---
+
+If you find this project useful you can donate:
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/G2G33AMQO)
