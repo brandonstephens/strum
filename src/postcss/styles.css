@@ -52,7 +52,7 @@
   @apply dark:border-coolGray-700;
   @apply mb-4;
   @apply text-2xl;
-  @apply text-coolGray-600;
+  @apply text-coolGray-800;
   @apply text-coolGray-400;
   @apply font-bold;
 }

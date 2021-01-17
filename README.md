@@ -42,16 +42,16 @@ Delete the `./dist` folder and `./src/styles/`.
 
 1. `npm run clean`
 
-## Notes on build process
+### Notes on build process
 
-**Dev**
+#### Dev
 
 1. Gulp runs PostCSS to build Tailwind to `./src/styles.css`
 2. Eleventy runs and links to css at `./src/styles.css`
 3. Gulp watches for changes to `.src/postcss/`
 4. Eleventy watches for changes to lots of files including the output of gulp css to `.src/styles`
 
-**Production**
+#### Production
 
 1. CSS is built via PostCSS in production mode (which purges unused Tailwind classes) via Gulp
 2. Then Eleventy runs in production mode
