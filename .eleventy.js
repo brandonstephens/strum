@@ -1,5 +1,4 @@
 const strum = require('./src/shortcodes/strum')
-const htmlmin = require('html-minifier-terser')
 
 module.exports = (eleventyConfig) => {
   eleventyConfig.setBrowserSyncConfig({
@@ -7,33 +6,18 @@ module.exports = (eleventyConfig) => {
     ghostMode: false,
   })
 
-  eleventyConfig.addWatchTarget('./src/scripts/')
-  eleventyConfig.addWatchTarget('./src/shortcodes/')
-  eleventyConfig.addWatchTarget('./src/styles/')
+  eleventyConfig.setUseGitIgnore(false)
 
+  // copy static assets
   eleventyConfig.addPassthroughCopy('./src/assets')
-
-  //pwa stuff
-  eleventyConfig.addPassthroughCopy('./src/serviceWorker.js')
+  eleventyConfig.addPassthroughCopy('./src/styles')
+  eleventyConfig.addPassthroughCopy('./src/scripts')
   eleventyConfig.addPassthroughCopy('./src/manifest.json')
 
+  // custom shortcodes for use in templates
   eleventyConfig.addShortcode('strum', strum)
 
-  if (process.env.ELEVENTY_PRODUCTION) {
-    eleventyConfig.addTransform('htmlmin', (content, path) =>
-      path.endsWith('.html')
-        ? htmlmin.minify(content, {
-            minifyCSS: true,
-            minifyJS: true,
-            removeComments: true,
-            collapseWhitespace: true,
-          })
-        : content
-    )
-  }
-
   return {
-    isProduction: process.env.ELEVENTY_PRODUCTION ? 'true' : 'false',
     dir: {
       input: 'src',
       output: 'dist',

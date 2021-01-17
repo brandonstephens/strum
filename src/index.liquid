@@ -13,10 +13,8 @@
     <link rel="shortcut icon" href="/assets/favicon.png" type="image/png" />
     <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
     <link rel="manifest" href="/manifest.json" />
-    {% capture css %}{% include ../tmp/style.css %}{% endcapture %}
-    <style>
-      {{ css | safe }}
-    </style>
+    <link rel="stylesheet" href="/styles/styles.css" inline />
+
     <script>
       // On page load or when changing themes, best to add inline in `head` to avoid FOUC
       if (
@@ -39,11 +37,14 @@
         >
           Strum Practice
         </h1>
+
         <nav class="space-x-2 pt-4">
           <button id="shuffle" class="button-base" title="shuffle">🎲 <span class="sr-only">shuffle</span></button>
+
           <button id="share" class="button-base button-disabled" title="share">
             📤 <span class="sr-only">share</span>
           </button>
+
           <button id="theme" class="button-base" title="theme">
             <span id="label">🌑</span> <span class="sr-only">toggle theme</span>
           </button>
@@ -94,9 +95,6 @@
       </footer>
     </div>
 
-    {% capture js %}{% include ./scripts/app.js %}{% endcapture %}
-    <script>
-      {{ js | safe }} // prettier-ignore
-    </script>
+    <script src="scripts/app.js" inline></script>
   </body>
 </html>

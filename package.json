@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "A simple tool to help practice different strumming patterns.",
   "scripts": {
-    "clean": "rm -rf ./dist && rm -rf ./tmp",
-    "start": "postcss ./src/styles/styles.css --o ./tmp/style.css && eleventy --serve & postcss ./src/styles/styles.css --o ./tmp/style.css --watch",
-    "build": "NODE_ENV=production postcss ./src/styles/styles.css --o ./tmp/style.css && ELEVENTY_PRODUCTION=true eleventy && rm -rf ./tmp",
+    "gulp": "gulp",
+    "start": "npm run dev",
+    "dev": "gulp cssWatch & eleventy --serve",
+    "build": "NODE_ENV=production gulp css && ELEVENTY_PRODUCTION=true eleventy && gulp build && echo \"🔨 Build completed\" && exit 0",
+    "clean": "rm -rf ./dist && rm -rf ./src/styles",
     "serve": "browser-sync start --server ./dist --no-notify --no-ghost-mode"
   },
   "keywords": [
@@ -19,9 +21,11 @@
   "devDependencies": {
     "@11ty/eleventy": "^0.11.0",
     "autoprefixer": "^10.1.0",
-    "html-minifier-terser": "^5.1.1",
+    "gulp": "^4.0.2",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-inline-source": "^4.0.0",
+    "gulp-postcss": "^9.0.0",
     "postcss": "^8.2.1",
-    "postcss-cli": "^8.3.0",
     "prettier": "2.2.1",
     "tailwindcss": "^2.0.2"
   }

@@ -1,4 +1,4 @@
 .DS_Store
 dist/**/*
-tmp/**/*
+src/styles/**/*
 node_modules
