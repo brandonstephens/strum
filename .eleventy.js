@@ -2,7 +2,7 @@ const strum = require('./src/shortcodes/strum')
 
 module.exports = (eleventyConfig) => {
   eleventyConfig.setBrowserSyncConfig({
-    open: 'local', // launches localhost on npm start
+    open: 'local', // launches localhost in browser on npm start
     ghostMode: false,
   })
 
