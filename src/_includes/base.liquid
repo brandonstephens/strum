@@ -2,10 +2,10 @@
 <html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
-    <title>{{ site.title }} | Guitar Helper</title>
+    <title>{{ site.title }} | {{ title }} | Guitar Helper</title>
     <meta name="description" content="{{ site.description }}" />
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <meta name="apple-mobile-web-app-title" content="Strum" />
+    <meta name="apple-mobile-web-app-title" content="{{ site.title }}" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta name="theme-color" content="#fbbf24" />
@@ -24,7 +24,7 @@
         <h1
           class="text-6xl font-thin text-transparent bg-gradient-to-br from-yellow-400 via-amber-500 to-orange-600 bg-clip-text mb-2 md:mb-0"
         >
-          Strum Practice
+          {{ site.title }} Practice
         </h1>
 
         <nav class="space-x-2 pt-3">
