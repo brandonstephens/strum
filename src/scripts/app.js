@@ -2,6 +2,8 @@
 // Constants
 // -----------------------------------------------------------------------------
 const CLASS_INACTIVE = 'strum-inactive'
+const CLASS_STRUM_UP = 'strum-strum-up'
+const CLASS_STRUM_DOWN = 'strum-strum-down'
 
 // -----------------------------------------------------------------------------
 // Functions
@@ -19,6 +21,11 @@ const getState = () => {
 
 const screenReaderLabel = (isDown, isActive) => {
   return `${isDown ? 'down' : 'up'} ${isActive ? 'strum' : 'rest'}`
+}
+
+const calcTimeBetweenBeats = () => {
+  const bpm = document.querySelector('input[id="bpm"]').value
+  return (60.0/bpm) * 1000.0
 }
 
 const getQueryParams = () => {
@@ -81,6 +88,50 @@ const toggleTheme = () => {
   }
 }
 
+isPlay = false;
+var downloadTimer = null
+const togglePlayPause = () => {
+  const beat_len = document.querySelectorAll('[id^="beat"]').length
+  const time_between_beats = calcTimeBetweenBeats();
+  var currentBeat = 0;
+  var oldBeat = 0;
+  if (isPlay) {
+    isPlay = false;
+    document.querySelector('input[id="bpm"]').disabled = false;
+    var beats = document.querySelectorAll('[id^="beat"]')
+    beats.forEach((element, index, array) => {
+      element.classList.remove(CLASS_STRUM_DOWN);
+      element.classList.remove(CLASS_STRUM_UP);
+    } );
+
+    clearInterval(downloadTimer)
+  } else {
+    isPlay = true;
+    document.querySelector('input[id="bpm"]').disabled = true;
+    currentBeat = currentBeat % (beat_len-1)
+    var beats = document.querySelectorAll('[id^="beat"]')
+    downloadTimer = setInterval(function(){
+      console.log(currentBeat%2)
+      if(currentBeat%2===1) { // Odd
+        beats[oldBeat].classList.remove(CLASS_STRUM_DOWN)
+        beats[currentBeat].classList.add(CLASS_STRUM_UP)
+      }
+      if(currentBeat%2===0) { // Even
+        beats[oldBeat].classList.remove(CLASS_STRUM_UP)
+        beats[currentBeat].classList.add(CLASS_STRUM_DOWN)
+      }
+
+      console.log(currentBeat)
+      oldBeat = currentBeat
+      currentBeat = currentBeat + 1
+      if(currentBeat===beat_len){
+        currentBeat = 0
+      }
+    }, time_between_beats);
+    console.log("Play");
+  }
+}
+
 const initToggle = () => {
   const isDark = localStorage.theme === 'dark'
   const themeLabel = document.getElementById('label')
@@ -118,6 +169,12 @@ shareButton.addEventListener('click', (event) => {
 const themeButton = document.getElementById('theme')
 themeButton.addEventListener('click', (event) => {
   toggleTheme()
+})
+
+
+const playButton = document.getElementById('play')
+playButton.addEventListener('click', (event) => {
+  togglePlayPause()
 })
 
 const strumPattern = document.getElementById('strumPattern')

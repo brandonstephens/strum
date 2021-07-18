@@ -46,6 +46,14 @@
   @apply opacity-50;
 }
 
+.strum-strum-up {
+  background-color: yellowgreen;!important;
+}
+
+.strum-strum-down {
+  background-color: yellowgreen;!important;
+}
+
 .beat-title {
   @apply border-b-2;
   @apply border-coolGray-200;
