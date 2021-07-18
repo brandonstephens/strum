@@ -37,6 +37,15 @@
           <button id="theme" class="button-base" title="theme">
             <span id="label">🌑</span> <span class="sr-only">toggle theme</span>
           </button>
+
+          <button id="play" class="button-base" title="play/pause">
+            <span id="label">⏯</span> <span class="sr-only">toggle beats</span>
+          </button>
+
+          <input type="range" value="100" min="60" max="240" id="bpm" oninput="this.nextElementSibling.value = this.value">
+          <output>100</output>
+          <label for="volume">BPM</label>
+
         </nav>
       </header>
     </div>
